@@ -1,4 +1,4 @@
-FROM centos:6.7
+FROM centos:6
 ENV MAVEN_VERSION 3.3.3
 WORKDIR /tmp
 
