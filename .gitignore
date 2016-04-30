@@ -1,5 +1,7 @@
 *.class
-
+.vagrant
+docker/m2
+target
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
