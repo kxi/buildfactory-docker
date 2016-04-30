@@ -5,4 +5,4 @@ mvn --version
 #mvn clean validate compile
 
 cd /source_code/sample_maven_project/gs-rest-service
-mvn clean spring-boot:run
+mvn clean spring-boot:run -X
