@@ -1,11 +1,12 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.define "docker-host" do |dockerhost|
+  config.vm.define "docker-build-factory" do |dockerhost|
     dockerhost.vm.box = "ubuntu/trusty64"
     dockerhost.ssh.forward_agent = true
     dockerhost.vm.provider "virtualbox" do |vb|
-      vb.memory = 1024
+      vb.name = "docker-build-factory"
+      vb.memory = 512
       vb.cpus = 1
     end
    
