@@ -7,7 +7,7 @@ In enterprise software development, it is common that local Dev environment diff
 
 Prerequisites
 ============
-* [Docker-Machine](https://docs.docker.com/machine/install-machine/)
+* [Docker Toolbox](https://docs.docker.com/engine/installation/mac/): docker client and docker machine included
 * [Vagrant](https://www.vagrantup.com/)
 
 How to Use
@@ -19,7 +19,7 @@ How to Use
 Create Docker Machine (spin up a VM)
 
     docker-machine rm docker-build-factory  
-    docker-machine create --driver virtualbox docker-build-factor
+    docker-machine create --driver virtualbox docker-build-factory
     eval "$(docker-machine env docker-build-factory)"
 
 Config the port forwarding:
